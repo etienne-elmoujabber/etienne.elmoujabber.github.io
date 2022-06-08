@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources\CSS\styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <title>Etienne's HTML & CSS Cheatsheet</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Etienne's HTML & CSS Cheatsheet</h1>
+        </div>
+    </header>
+        <section>
+            <div class="html">
+                <h2>HTML Tags</h2>
+                <h3>Tags commonly used in the <span class="h3tag">&lt;head&gt;</span> element.</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tags</th>
+                            <th>Description and Functionality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;head&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;head&gt;</span> (header) element is used to represent the collection of metadata for the document. 
+                                Such as linking your CSS stylesheet, Fonts and Script Elements. Usually using a text editor such as VScode, typing 
+                                "html" and clicking "html:5" will automatically add a common template of <span class="code">&lt;meta&gt;</span> 
+                                elements used to start coding. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;meta&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;meta&gt;</span> element represents various kinds of metadata that cannot be expressed using 
+                                the title, base, link, style and script elements. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;link&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;link&gt;</span> element is used to link documents to your "HTML" such as Fonts, Folders, CSS and others.
+                                When using <span class="code">&lt;link&gt;</span> it is usally followed by the <span class="attribute">href</span> (href adds a link to a tag)
+                                attribute and <span class="attribute">rel</span> (specifies the relationship) attribute. <br>
+                                I.E. : <span class="example">&lt;link href="RELATIVE PATH TO CSS" rel="stylesheet"&gt;</span> or 
+                                <span class="example">&lt;link <span class="attribute">href</span>="FONT LINK" 
+                                <span class="attribute">rel</span>="preconnect"&gt;</span>. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;title&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;title&gt;</span> element is your webpage title. Commonly seen on a browser TAB and link path. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;style&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;style&gt;</span> element allows you to directly style your HTML content using CSS from your HTML document.
+                                It is generally better practice to use an external stylesheet but can be handy to provide small examples. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+
+                        <!-- As I have not learned JavaScript up until this point. I will leave the other tags for now. 05/25/2022 Etienne -->
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="html">
+                <h3>Tags commonly used in the <span class="h3tag">&lt;body&gt;</span> element.</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tags</th>
+                            <th>Description and Functionality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;header&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;header&gt;</span> element is simply your introduction to your website. It may also include a set of navigation links. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;section&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;section&gt;</span> element is used to represent/seperate a certain section of the HTML file. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;div&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;div&gt;</span> element is simply used as a container for your HTML <span class="h3tag">&lt;body&gt;</span>. 
+                                Basically, it helps you divide your HTML into seperate "containers" which makes it easier to read code. Also, it helps you style 
+                                the content within said "container" without it affecting all of your HTML <span class="h3tag">&lt;body&gt;</span>. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;h1&gt;</span>
+                                <span class="code">&lt;h2&gt;</span>
+                                <span class="code">&lt;h3&gt;</span>
+                                <span class="code">&lt;h4&gt;</span>
+                                <span class="code">&lt;h5&gt;</span>
+                                <span class="code">&lt;h6&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;h1&gt;</span>,
+                                <span class="code">&lt;h2&gt;</span>,
+                                <span class="code">&lt;h3&gt;</span>,
+                                <span class="code">&lt;h4&gt;</span>,
+                                <span class="code">&lt;h5&gt;</span> and 
+                                <span class="code">&lt;h6&gt;</span> elements are section headings. Ranking from most important/bigger (1) to least important/smaller (6).
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;p&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;p&gt;</span> element is a paragraph. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;img&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;img&gt;</span> element is used to add an image to your HTML <span class="h3tag">&lt;body&gt;</span>. 
+                                When using <span class="code">&lt;img&gt;</span> it is usually followed by <span class="attribute">src</span> attribute(link to the image) 
+                                and <span class="attribute">alt</span> attribute(text description for the visually impaired). <br>
+                                I.E. <span class="example">&lt;img <span class="attribute">src</span>="LINK TO A WOLF IMAGE" 
+                                <span class="attribute">alt</span>="Image of a brown wolf."</span>
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;a&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;a&gt;</span> element is used to add a link to a text. When using <span class="code">&lt;a&gt;</span>
+                                it is usually followed by <span class="attribute">href</span> (href adds a link to a tag). <br>
+                                I.E. <span class="example">&lt;a <span class="attribute">href</span>="link"&gt; MDN Reference &lt;/a&gt;</span> Looking at the page
+                                the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" class="reflink">MDN Reference</a> 
+                                is a perfect example of this. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;nav&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;nav&gt;</span> element is used to add navigation links to your website page. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;ol&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;ol&gt;</span> element is used to create an "Organised List". Not to be confused with the 
+                                <span class="code">&lt;ul&gt;</span> tag. An "Organised List" is numbered. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;ul&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;ul&gt;</span> element is used to create an "Unorganised List". Not to be confused with the 
+                                <span class="code">&lt;ol&gt;</span> tag. An "Unorganised List" is not numbered but bulleted. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;li&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;li&gt;</span> element is used to list the items in a <span class="code">&lt;ol&gt;</span> tag 
+                                and <span class="code">&lt;ul&gt;</span>. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="html">
+                <h3>How to create a table in the <span class="h3tag">&lt;body&gt;</span> element.</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tags</th>
+                            <th>Description and Functionality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;table&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;table&gt;</span> element is used to create and represent the data in the form of a table. 
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;thead&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;thead&gt;</span> element is the block of headers under the <span class="code">&lt;table&gt;</span>
+                                element. <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;th&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;th&gt;</span> element defines the header data in the <span class="code">&lt;thead&gt;</span> element.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;tr&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;tr&gt;</span> element defines a row in a table. It can be used under <span class="code">&lt;thead&gt;</span>
+                                and <span class="code">&lt;tbody&gt;</span>.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;td&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;td&gt;</span> element defines the data in a row or table. It is generally used under the 
+                                <span class="code">&lt;tbody&gt;</span> element. Not to be mistaken with <span class="code">&lt;th&gt;</span>  element.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code">&lt;tfoot&gt;</span>
+                            </td>
+                            <td>
+                                The <span class="code">&lt;tfoot&gt;</span> element defines a row summarizing the columns in the table. 
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="html">
+                <h2>CSS Properties</h2>
+                <h3>Properties commonly used to style the <span class="h3tag">&lt;body&gt;</span> using CSS</h3>
+                <p>
+                    Properties are used inside your selectors brackets. "{ }".
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Properties</th>
+                            <th>Description and Functionality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="properties">margin</span>
+                            </td>
+                            <td>
+                                The <span class="properties">margin</span> property is a shorthand used to define all four sides of the margin area. <br>
+                                "body {
+                                <span class="syntax">margin: auto</span> }" <br>
+                                The "auto" value centers your content using the available horizontal space.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">border</span>
+                            </td>
+                            <td>
+                                The <span class="properties">border</span> property defines a border.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">padding</span>
+                            </td>
+                            <td>
+                                The <span class="properties">padding</span> property defines the padding area on all four sides around the selectors content.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">height</span>
+                            </td>
+                            <td>
+                                The <span class="properties">height</span> property defines the height of the selectors content.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">width</span>
+                            </td>
+                            <td>
+                                The <span class="properties">width</span> property defines the width of the selectors content.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">font-family</span>
+                            </td>
+                            <td>
+                                The <span class="properties">font-family</span> property defines the font of the contents text.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">color</span>
+                            </td>
+                            <td>
+                                The <span class="properties">color</span> property defines the foreground color of the contents text.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">font-weight</span>
+                            </Td>
+                            <td>
+                                The <span class="properties">font-weight</span> property defines the "boldness" of the font. 
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">font-size</span>
+                            </td>
+                            <td>
+                                The <span class="properties">font-size</span> property defines the size of the font.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">text-align</span>
+                            </td>
+                            <td>
+                                The <span class="properties">text-align</span> property sets the horizontal alignment of the text.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">background-image</span>
+                            </td>
+                            <td>
+                                The <span class="properties">background-image</span> property sets a background image of the content.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">display</span>
+                            </td>
+                            <td>
+                                The <span class="properties">display</span> property sets whether an element is treated as a block or inline element 
+                                and the layout used for its children, such as flow layout, grid or flex.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" class="relink">MDN Reference</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="properties">box-sizing</span>
+                            </td>
+                            <td>
+                                The <span class="properties">box-sizing</span> sets how the total width and height on an element is calculated.
+                                <br>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" class="reflink">MDN Reference</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+</body>
+</html>
